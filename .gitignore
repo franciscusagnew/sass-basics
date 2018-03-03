@@ -6,7 +6,6 @@ bootstrap.css
 bootstrap.js
 app.js
 _pgbackup
-scss
 node_modules/
 
 # Compiled source #
