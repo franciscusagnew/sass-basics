@@ -5,9 +5,10 @@ pinegrow.json
 bootstrap.css
 bootstrap.js
 app.js
-application.css.map
+css/application.css.map
 _pgbackup
 node_modules/
+.sass-cache/
 
 # Compiled source #
 ###################
