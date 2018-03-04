@@ -1,4 +1,4 @@
-// Variables
+// Variables -------------------------------------- /
 $white: #fff;
 $color-primary: #CF649A;
 $color-secondary: #b13c69;
@@ -11,6 +11,24 @@ $color-bg-light: #d1abc3;
 $font-stack-primary: 'Raleway', sans-serif;
 $font-stack-secondary: 'Bree Serif', serif;
 
+$max-width: 1000px;
+
+// Mixins ------------------------------------------ /
+@mixin skewed {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px; 
+  position: absolute;
+  transform: skewY(0deg);
+}
+
+@mixin center {
+  width: 90%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* BASE ------------------------------------------- */
 
@@ -65,12 +83,7 @@ header {
   position: relative;
 
   &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 50px; 
-    position: absolute;
-    transform: skewY(0deg);
+    @include skewed;
     background-color: $white;
     bottom: -20px;
   } 
@@ -97,12 +110,7 @@ footer {
   position: relative;
 
   &::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 50px; 
-    position: absolute;
-    transform: skewY(0deg);
+    @include skewed;
     background-color: $color-shade;
     top: -25px;
   }
@@ -138,7 +146,7 @@ footer {
 
     &:hover {
       color: $color-secondary;
-      
+
     }
   }
 }
@@ -221,9 +229,7 @@ footer {
 
 @media (min-width: 768px) {
   .main-content {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
+    @include center;
   }
 }
 
