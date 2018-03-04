@@ -21,6 +21,14 @@ ul {
 
 p {
   margin-bottom: 1.25em; }
+  .intro p {
+    font-size: 1.2em; }
+
+a {
+  color: #CF649A;
+  text-decoration: none; }
+  a:hover {
+    color: #fff; }
 
 /* HEADER & FOOTER -------------------------------- */
 header {
@@ -29,16 +37,15 @@ header {
   background-blend-mode: multiply;
   background-size: cover;
   position: relative; }
-
-header::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  transform: skewY(0deg);
-  background-color: #fff;
-  bottom: -20px; }
+  header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: skewY(0deg);
+    background-color: #fff;
+    bottom: -20px; }
 
 header h1 {
   color: #fff;
@@ -57,16 +64,15 @@ footer {
   background-color: #eee;
   margin-top: 3.5em;
   position: relative; }
-
-footer::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  transform: skewY(0deg);
-  background-color: #eee;
-  top: -25px; }
+  footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: skewY(0deg);
+    background-color: #eee;
+    top: -25px; }
 
 /* CONTAINERS ------------------------------------- */
 .inner {
@@ -88,6 +94,8 @@ footer::before {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5em; }
+    .main-nav a:hover {
+      color: #b13c69; }
 
 .img-featured {
   width: 180px;
@@ -109,17 +117,22 @@ footer::before {
   .card .icon, .card h1 {
     color: #CF649A; }
 
-.btn-info {
+.btn {
   color: #fff;
   display: inline-block;
-  font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
-  background-color: #CF649A;
-  margin-top: auto; }
+  background-color: #CF649A; }
+  .btn-callout {
+    font-size: 1.1em; }
+  .btn-info {
+    font-size: 0.85em;
+    margin-top: auto; }
+  .btn:hover {
+    background-color: #b13c69; }
 
 /* MEDIA QUERIES ---------------------------------- */
 @media (max-width: 575px) {

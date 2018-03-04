@@ -40,6 +40,19 @@ ul {
 
 p {
   margin-bottom: 1.25em;
+
+  .intro & {
+    font-size: 1.2em;
+  }
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 /* HEADER & FOOTER -------------------------------- */
@@ -50,18 +63,18 @@ header {
   background-blend-mode: multiply;
   background-size: cover;
   position: relative;
-}
 
-header::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 50px; 
-  position: absolute;
-  transform: skewY(0deg);
-  background-color: $white;
-  bottom: -20px;
-} 
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px; 
+    position: absolute;
+    transform: skewY(0deg);
+    background-color: $white;
+    bottom: -20px;
+  } 
+}
 
 header h1 {
   color: $white;
@@ -81,19 +94,19 @@ footer {
   height: 100px;
   background-color: $color-shade;
   margin-top: 3.5em;
-  position: relative; 
-}
+  position: relative;
 
-footer::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 50px; 
-  position: absolute;
-  transform: skewY(0deg);
-  background-color: $color-shade;
-  top: -25px;
-} 
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px; 
+    position: absolute;
+    transform: skewY(0deg);
+    background-color: $color-shade;
+    top: -25px;
+  }
+}
 
 /* CONTAINERS ------------------------------------- */
 
@@ -122,6 +135,11 @@ footer::before {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5em;
+
+    &:hover {
+      color: $color-secondary;
+      
+    }
   }
 }
 
@@ -152,17 +170,28 @@ footer::before {
   }
 }
 
-.btn-info {
+.btn {
   color: $white;
   display: inline-block;
-  font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
-  background-color: $color-primary;  
-  margin-top: auto;
+  background-color: $color-primary;
+
+  &-callout {
+    font-size: 1.1em;
+  }
+
+  &-info {
+    font-size: 0.85em;
+    margin-top: auto;
+  }
+
+  &:hover {
+      background-color: $color-secondary;
+    }
 }
 
 
