@@ -27,12 +27,13 @@ p {
 a {
   color: #CF649A;
   text-decoration: none; }
-  .inner a {
-    color: #fff; }
   a:hover {
     color: #fff; }
-    .inner a:hover {
-      color: #CF649A; }
+
+.inner a {
+  color: #fff; }
+  .inner a:hover {
+    color: #CF649A; }
 
 /* HEADER & FOOTER -------------------------------- */
 header {

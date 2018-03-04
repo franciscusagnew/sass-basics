@@ -73,16 +73,16 @@ a {
   color: $color-primary;
   text-decoration: none;
 
-  .inner & {
-    color: $white;
-  }
-
   &:hover {
     color: $white;
+  }
+}
 
-    .inner & {
-      color: $color-primary;
-    }
+.inner a {
+  color: $white;
+
+  &:hover {
+    color: $color-primary;
   }
 }
 
