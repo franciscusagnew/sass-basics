@@ -1,12 +1,12 @@
 // Variables
 $white: #fff;
-$color-primary: #278da4;
+$color-primary: #CF649A;
 $color-secondary: #b13c69;
-$color-accent: #eeea72;
+$color-accent: #036;
 $color-shade: #eee;
 $color-text: #343434;
-$color-bg: #3acec2;
-$color-bg-light: #009fe1;
+$color-bg: #804665;
+$color-bg-light: #d1abc3;
 
 $font-stack-primary: 'Raleway', sans-serif;
 $font-stack-secondary: 'Bree Serif', serif;
@@ -58,9 +58,9 @@ header::after {
   width: 100%;
   height: 50px; 
   position: absolute;
-  transform: skewY(-2deg);
+  transform: skewY(0deg);
   background-color: $white;
-  bottom: -25px;
+  bottom: -20px;
 } 
 
 header h1 {
@@ -71,7 +71,7 @@ header h1 {
 }
 
 header p {
-  color: $color-accent;
+  color: $white;
   font-size: 1.25em;
   margin: 0;
 }
@@ -90,7 +90,7 @@ footer::before {
   width: 100%;
   height: 50px; 
   position: absolute;
-  transform: skewY(-2deg);
+  transform: skewY(0deg);
   background-color: $color-shade;
   top: -25px;
 } 
@@ -126,9 +126,10 @@ footer::before {
 }
 
 .img-featured {
-  width: 165px;
-  border: 4px solid $white; 
-  border-radius: 50%;
+  width: 180px;
+  padding: 0.5em;
+  //border: 4px solid $white; 
+  border-radius: 20%;
   margin-top: 75px;
   position: relative;
   z-index: 100;

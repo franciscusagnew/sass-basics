@@ -25,7 +25,7 @@ p {
 /* HEADER & FOOTER -------------------------------- */
 header {
   height: 460px;
-  background: linear-gradient(#009fe1, #3acec2), url("../img/bg.jpg") no-repeat;
+  background: linear-gradient(#d1abc3, #804665), url("../img/bg.jpg") no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
   position: relative; }
@@ -36,9 +36,9 @@ header::after {
   width: 100%;
   height: 50px;
   position: absolute;
-  transform: skewY(-2deg);
+  transform: skewY(0deg);
   background-color: #fff;
-  bottom: -25px; }
+  bottom: -20px; }
 
 header h1 {
   color: #fff;
@@ -47,7 +47,7 @@ header h1 {
   letter-spacing: 1px; }
 
 header p {
-  color: #eeea72;
+  color: #fff;
   font-size: 1.25em;
   margin: 0; }
 
@@ -64,7 +64,7 @@ footer::before {
   width: 100%;
   height: 50px;
   position: absolute;
-  transform: skewY(-2deg);
+  transform: skewY(0deg);
   background-color: #eee;
   top: -25px; }
 
@@ -90,9 +90,9 @@ footer::before {
     padding: 0.5em; }
 
 .img-featured {
-  width: 165px;
-  border: 4px solid #fff;
-  border-radius: 50%;
+  width: 180px;
+  padding: 0.5em;
+  border-radius: 20%;
   margin-top: 75px;
   position: relative;
   z-index: 100; }
@@ -107,7 +107,7 @@ footer::before {
     margin: 0.35em 0 0;
     line-height: 1.25; }
   .card .icon, .card h1 {
-    color: #278da4; }
+    color: #CF649A; }
 
 .btn-info {
   color: #fff;
@@ -118,7 +118,7 @@ footer::before {
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
-  background-color: #278da4;
+  background-color: #CF649A;
   margin-top: auto; }
 
 /* MEDIA QUERIES ---------------------------------- */
