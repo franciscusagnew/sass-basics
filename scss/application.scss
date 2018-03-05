@@ -177,12 +177,12 @@ footer {
   border: 1px solid $color-shade;
   border-radius: 0.25em;
 
-  h1 {
+  h2 {
     margin: 0.35em 0 0;
     line-height: 1.25;
   }
 
-  .icon, h1 {
+  .icon, h2 {
     color: $color-primary;
   }
 }

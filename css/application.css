@@ -114,10 +114,10 @@ footer {
   padding: 1.5em 1em;
   border: 1px solid #eee;
   border-radius: 0.25em; }
-  .card h1 {
+  .card h2 {
     margin: 0.35em 0 0;
     line-height: 1.25; }
-  .card .icon, .card h1 {
+  .card .icon, .card h2 {
     color: #CF649A; }
 
 .btn-callout, .btn-info {
