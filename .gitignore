@@ -1,12 +1,10 @@
 # file sources #
 ###################
 package-lock.json
-pinegrow.json
 bootstrap.css
 bootstrap.js
 app.js
 css/application.css.map
-_pgbackup
 node_modules/
 .sass-cache/
 
